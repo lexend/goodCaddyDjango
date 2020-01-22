@@ -1,0 +1,15 @@
+{% extends 'accounts/base.html' %}
+
+{% block title %} GoodCaddy {% endblock %}
+
+{% block content %}
+<h2>Member Site</h2>
+<p>Hallo {{request.user.username}}! Du bist eingeloggt.</p>
+<p> Hier steht die accounts/tempates/accounts/member.html </br>
+die sich in die base.html im selben Verzeichnis einbettet.</br>
+Pfadangabe ist jedoch nur 'accounts/login.html', weil </br>
+Django die templates aller Apps durchsucht, sofern die App</br>
+in settings.py eingetragen ist.</br>
+Das Verzeichnis in jeder App muss natürlich '/templates/appname' heißen</p>
+<button type="submit">Logout</button>
+{% endblock %}

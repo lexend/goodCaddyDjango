@@ -1,0 +1,20 @@
+{% extends 'accounts/base.html' %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+<h2>Login Form</h2>
+
+<form method="post" action="">
+  {% csrf_token %}
+  {{login_form.as_p}}
+  <button type="submit">Login</button>
+</form>
+
+<p> Hier steht die accounts/tempates/accounts/login.html </br>
+die sich in die base.html im selben Verzeichnis einbettet.</br>
+Pfadangabe ist jedoch nur 'accounts/login.html', weil </br>
+Django die templates aller Apps durchsucht, sofern die App</br>
+in settings.py eingetragen ist.</br>
+Das Verzeichnis in jeder App muss natürlich '/templates/appname' heißen</p>
+{% endblock %}
