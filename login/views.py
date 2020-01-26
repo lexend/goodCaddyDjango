@@ -12,18 +12,18 @@ def group_check(request):
 	group_name=Group.objects.all().filter(user = request.user)# get logget user grouped name
 	group_name=str(group_name[0]) # convert to string
 
-	if "Student" == group_name:
-		return redirect('http://127.0.0.1:8000/student/')
-	elif "Teacher" == group_name:
-		return redirect('http://127.0.0.1:8000/teacher/')
+	if "Caddy" == group_name:
+		return redirect('http://127.0.0.1:8000/caddy/')
+	elif "Golfer" == group_name:
+		return redirect('http://127.0.0.1:8000/golfer/')
 
 def logout_view(request):
 	logout(request)
 	return redirect('http://127.0.0.1:8000/')
 
 
-class register_teacher(TemplateView):
-  template_name = "register_teacher.html"
+class register_golfer(TemplateView):
+  template_name = "register_golfer.html"
 
-class register_student(TemplateView):
-  template_name = "register_student.html"
+class register_caddy(TemplateView):
+  template_name = "register_caddy.html"

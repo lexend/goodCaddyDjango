@@ -8,14 +8,14 @@ from django.contrib import admin
 from .views import(
 	group_check,
 	logout_view,
-	register_teacher,
-	register_student,
+	register_golfer,
+	register_caddy,
 	)
 
 urlpatterns = [
       path('', LoginView.as_view(template_name='index.html'), name="home"),
       path('logout/', views.logout_view, name='logout'),
       path('group/', views.group_check, name='group'),
-      path('register_teacher/', views.register_teacher.as_view(), name='register_teacher'),
-      path('register_student/', views.register_student.as_view(), name='register_student'),
+      path('register_golfer/', views.register_golfer.as_view(), name='register_golfer'),
+      path('register_caddy/', views.register_caddy.as_view(), name='register_caddy'),
 ]
