@@ -1,20 +1,20 @@
 # Django-appointment-and-booking-system
-A complete python , django project for booking and appoientment for teacher and student
+A complete python , django project for booking and appointment for Golfer and Caddy
 
 #This  web application has several important features :
-(i) Easy appointment creation  for teacher 
+(i) Easy appointment creation  for golfer
 (ii) Easy date picker, time picker and auto time suggestion while creating new appointment
-(ii) Appointment edit and deletion  option 
+(ii) Appointment edit and deletion  option
 (iv) Success notification
 (v) Search  option with numeric and string
 (vi) Calendar Integration
 (vii) Central administrator
-(viii) Different type of profile group like Teacher and Student 
+(viii) Different type of profile group like Golfer and Caddy
 (ix) Modular Login system
 
 
 #References
-To understand this project in code level we highly recommend  to have a good knowledge in python 3 (we have used 3.70), python web framework django (2.1.3). We also recommend to know little about javascript and its framework vue.js. We have used calendar integration and date picker with pure javascript, jQuery and vue.js. In calendar integration we have used Jason formatted data, so it's good have idea  about Jason. Finally, we recommend to have knowledge about html css, we have used bootstrap  framework for html and css. We also recommend to have very clear knowledge about foreign key relationship and sqlite3 database. 
+To understand this project in code level we highly recommend  to have a good knowledge in python 3 (we have used 3.70), python web framework django (2.1.3). We also recommend to know little about javascript and its framework vue.js. We have used calendar integration and date picker with pure javascript, jQuery and vue.js. In calendar integration we have used Jason formatted data, so it's good have idea  about Jason. Finally, we recommend to have knowledge about html css, we have used bootstrap  framework for html and css. We also recommend to have very clear knowledge about foreign key relationship and sqlite3 database.
 https://www.djangoproject.com/ (***)
 https://www.python.org/ (***)
 https://getbootstrap.com/ (**)
@@ -46,10 +46,9 @@ Now we have to create another directory inside virtualenv, then we have to insta
 
 5. pipenv install django
 
-Copy this  whole oproject inside django directory, browse the app and run 
+Copy this  whole oproject inside django directory, browse the app and run
 python .\manage.py runserver
 
-After successfully deployment we will  require this User access for the project: 
-Supersuer: admin (url: http://127.0.0.1:8000/admin)
-Other User: Teacher1, Teacher2, Student1, Student2 (url: http://127.0.0.1:8000/)
-password for all admin and user: Saroar123
+After successfully deployment we will require this User access for the project:
+Superuser: alex (url: http://127.0.0.1:8000/admin)
+password for admin: 123456
